@@ -1,12 +1,22 @@
-<html>
-    <head>
-        <title>Gulp Project Title</title>
-        <script data-main="js/all" src="libs/require.js"></script>
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-    </head>
-    <body>
-        <div class="box">
-            <h1>Gulp Project</h1>
-        </div>
-    </body>
+<!doctype html>
+<html lang="en" ng-app="snapCatApp">
+<head>
+    <meta charset="utf-8">
+    <title>gulp-project</title>
+    <link rel="stylesheet" href="css/libs/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/libs/angular.js"></script>
+    <script src="js/all.js"></script>
+</head>
+<body ng-controller="CatListCtrl">
+
+<ul>
+    <li ng-repeat="cat in cats">
+        {{cat.name}}
+        <p>{{cat.description}}</p>
+    </li>
+</ul>
+<p>Total number of phones: {{cats.length}}</p>
+
+</body>
 </html>

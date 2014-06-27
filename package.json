@@ -22,8 +22,8 @@
         }
     ],
     "dependencies": {
-        "jquery": "*",
-        "requirejs": "*"
+        "bootstrap": "*",
+        "angular": "*"
     },
     "devDependencies": {
         "gulp": "*",

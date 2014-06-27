@@ -33,7 +33,7 @@ gulp.task('js', function () {
     gulp.src('src/app/**/*.js')
         .pipe(jshint())
         .pipe(jshint.reporter('default'))
-        .pipe(uglify())
+        //.pipe(uglify())
         .pipe(concat('all.js'))
         .pipe(gulp.dest('build/app/js/'))
 });
@@ -48,10 +48,13 @@ gulp.task('css', function () {
 
 gulp.task('libs', function () {
     gulp.src([
-        'node_modules/requirejs/require.js', 
-        'node_modules/jquery/dist/jquery.js'])
-       .pipe(uglify())
-       .pipe(gulp.dest('build/app/libs/'))
+        'node_modules/angular/lib/angular.js'])
+        .pipe(uglify())
+        .pipe(gulp.dest('build/app/js/libs/'))
+    gulp.src([
+        'node_modules/bootstrap/dist/css/bootstrap.css'])
+        .pipe(minifyCSS({keepBreaks:true}))
+        .pipe(gulp.dest('build/app/css/libs/'))
 });
 
 
