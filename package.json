@@ -1,0 +1,55 @@
+{
+    "name": "gulp-project",
+    "description": "Gulp tryout and skeleton",
+    "version": "0.0.1",
+    "keywords": [
+        "gulp",
+        "skeleton",
+        "demo"
+    ],
+    "maintainers": [
+        {
+            "name": "Frank Huffener",
+            "email": "frank@duckbite.nl",
+            "web": "http://www.frankhuffener.com"
+        }
+    ],
+    "contributors": [
+        {
+            "name": "Frank Huffener",
+            "email": "frank@duckbite.nl",
+            "web": "http://www.frankhuffener.com"
+        }
+    ],
+    "dependencies": {
+        "jquery": "*",
+        "requirejs": "*"
+    },
+    "devDependencies": {
+        "gulp": "*",
+        "gulp-uglify": "*",
+        "gulp-jshint": "*",
+        "gulp-concat": "*",
+        "gulp-less" : "*",
+        "gulp-minify-css" : "*",
+        "gulp-connect": "*"
+    },
+    "demos": {
+        "url" : "http://duckbite.nl/gulp-project/demo"
+    },
+    "bugs": {
+        "mail": "bugs@duckbite.nl",
+        "url": "http://duckbite.nl/gulp-project/bugs"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/ledere/gulp-project.git"
+    },
+    "licenses": [
+        {
+            "name": "MIT",
+            "url": "http://www.opensource.org/licenses/mit-license.php"
+        }
+    ],
+    "homepage": "http://www.duckbite.nl/gulp-project"
+}
