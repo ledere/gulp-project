@@ -1,8 +1,8 @@
-"use strict";
 
 var snapCatApp = angular.module('snapCatApp', []);
 
 snapCatApp.controller('CatListCtrl', function ($scope) {
+    "use strict";
     $scope.cats = [
         {
             'name': 'Grumpy Cat',
